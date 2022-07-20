@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Purchase Form</title>
+</head>
+
+<body>
+  <h2>Product Purchase Form</h2>
+
+  <form>
+    <fieldset>
+      <legend><h3>Customer Details *</h3></legend>
+      <label for="fullName">Enter Full Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="fullName" id="fullName" placeholder="Enter First and Last Name" size="30" required>
+      </label>
+      <br><br>
+      <label for="email">Enter Email ID : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com" size="30" required>
+      </label>
+      <br><br>
+      <label for="phone">Enter Phone Number : &nbsp;&nbsp;
+        <input type="tel" name="phone" id="phone" placeholder="1234567890" size="30" maxlength="10" required>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend><h3>Delivery Address *</h3></legend>
+      <label for="address">Enter Address : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <textarea name="address" id="address" cols="30" rows="4" placeholder="Enter Your Address" required></textarea>
+      </label>
+      <br><br>
+      <label for="pinCode">Pin Code : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="tel" name="pinCode" id="pinCode" size="30" maxlength="6" required>
+      </label>
+      <br><br>
+      <label for="state">State : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="state" id="state" required>
+          <option value="">Select Your State</option>
+          <option value="rajasthan">Rajasthan</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="mp">Madhya Pradesh</option>
+          <option value="up">Utter Pradesh</option>
+          <option value="gujrat">Gujarat</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="andhra">Andhra Pradesh</option>
+          <option value="odisha">Odisha</option>
+          <option value="chattisgarh">Chattisgarh</option>
+          <option value="tamil-nadu">Tamil Nadu</option>
+        </select>
+      </label>
+      <br><br>
+      <label for="country">Country : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="country" id="country">
+          <option value="In" selected>India</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend><h3>Card Details *</h3></legend>
+      <label for="card-type">Card Type : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="card-type" id="visa"> 
+        <label for="visa">VISA</label>
+        
+        <input type="radio" name="card-type" id="mastercard"> 
+        <label for="mastercard">MasterCard</label>
+        
+        <input type="radio" name="card-type" id="rupay"> 
+        <label for="rupay">RuPay</label>
+      </label>
+      <br><br>
+      <label for="card_number">Card Number : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="tel" name="card_number" id="card_number" size="30" maxlength="20">
+      </label>
+      <br><br>
+      <label for="security_code">Security Code : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="tel" name="security_code" id="security_code" size="30" maxlength="5">
+      </label>
+    </fieldset>
+
+    <br><br>
+
+    <button type="submit">BUY IT!</button>
+  </form>
+</body>
+
+</html>
