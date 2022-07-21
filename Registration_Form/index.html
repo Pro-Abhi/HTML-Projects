@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Student Registration Form</legend>
+
+      <table cellpadding="10" cellspacing="10">
+        <!-- First Name -->
+        <tr>
+          <th>
+            <label for="firstName">First Name </label>
+          </th>
+          <td>
+            <input type="text" name="firstName" id="firstName" size="24" required>
+          </td>
+        </tr>
+        <!-- Last Name -->
+        <tr>
+          <th>
+            <label for="lastName">Last Name </label>
+          </th>
+          <td>
+            <input type="text" name="lastName" id="lastName" size="24" Required>
+          </td>
+        </tr>
+        <!-- Email -->
+        <tr>
+          <th>
+            <label for="email">Email ID </label>
+          </th>
+          <td>
+            <input type="email" name="email" id="email" size="24" required>
+          </td>
+        </tr>
+        <!-- Mobile Number -->
+        <tr>
+          <th>
+            <label for="mobileNumber">Mobile Number</label>
+          </th>
+          <td>
+            <input type="tel" name="mobileNumber" id="mobileNumber" maxlength="10" size="24">
+          </td>
+        </tr>
+        <!-- Gender -->
+        <tr>
+          <th>
+            <label for="gender">Gender</label>
+          </th>
+          <td>
+            <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+          </td>
+        </tr>
+        <!-- Date of Birth -->
+        <tr>
+          <th>
+            <label for="dob">Date of Birth(DOB)</label>
+          </th>
+          <td>
+            <select name="date" id="day">
+              <option value="">Day &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <select name="month" id="month">
+              <option value="">Month</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="october">october</option>
+              <option value="november">november</option>
+              <option value="December">December</option>
+            </select>
+            <select name="year" id="year">
+              <option value="">Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+            </select>
+          </td>
+        </tr>
+        <!-- Address -->
+        <tr>
+          <th>
+            <label for="address">Address</label>
+          </th>
+          <td>
+            <textarea name="address" id="address" cols="25" rows="6"></textarea>
+          </td>
+        </tr>
+        <!-- City -->
+        <tr>
+          <th>
+            <label for="city">City</label>
+          </th>
+          <td>
+            <input list="cities" id="city" name="city" size="25">
+            <datalist id="cities">
+              <option value="Mumbai"></option>
+              <option value="Delhi"></option>
+              <option value="Bangalore"></option>
+              <option value="Hydrabad"></option>
+              <option value="Ahmedabad"></option>
+              <option value="Chennai"></option>
+              <option value="Kolkata"></option>
+              <option value="Surat"></option>
+              <option value="Pune"></option>
+              <option value="Jaipur"></option>
+              <option value="Lucknow"></option>
+              <option value="Nagpur"></option>
+              <option value="Indore"></option>
+              <option value="Thane"></option>
+              <option value="Kanpur"></option>
+              <option value="Pimpri-Chinchwad"></option>
+              <option value="Agra"></option>
+              <option value="Nashik"></option>
+              <option value="Vijaywada"></option>
+              <option value="Ranchi"></option>
+              <option value="Punjab"></option>
+            </datalist>
+          </td>
+        </tr>
+        <!-- Pin Code -->
+        <tr>
+          <th>
+            <label for="pinCode">Pin Code</label>
+          </th>
+          <td>
+            <input type="tel" name="pinCode" id="pinCode" maxlength="6" size="25" placeholder="123456">
+          </td>
+        </tr>
+        <!-- State -->
+        <tr>
+          <th>
+            <label for="state">State</label>
+          </th>
+          <td>
+            <input list="states" id="state" name="state" size="25">
+            <datalist id="states">
+              <option value="Andhra Pradesh"></option>
+              <option value="Assam"></option>
+              <option value="Bihar"></option>
+              <option value="Goa"></option>
+              <option value="Gujarat"></option>
+              <option value="Karnataka"></option>
+              <option value="Kerala"></option>
+              <option value="Madhya Pradesh"></option>
+              <option value="Maharashtra"></option>
+              <option value="Odisha"></option>
+              <option value="Punjab"></option>
+              <option value="Rajasthan"></option>
+              <option value="Tamil Nadu"></option>
+              <option value="Uttarakhand"></option>
+              <option value="Uttar Pradesh"></option>
+              <option value="Tripura"></option>
+              <option value="Telangana"></option>
+              <option value="Meghalaya"></option>
+              <option value="Mizoram"></option>
+              <option value="Nagaland"></option>
+              <option value="West Bengal"></option>
+            </datalist>
+          </td>
+        </tr>
+        <!-- Country -->
+        <tr>
+          <th>
+            <label for="country">Country</label>
+          </th>
+          <td>
+            <input type="text" name="country" id="country" value="India" size="25" readonly>
+          </td>
+        </tr>
+        <!-- Hobbies -->
+        <tr>
+          <th>
+            <label for="hobbies">Hobbies</label>
+          </th>
+          <td>
+            <input type="checkbox" name="hobby" id="drawing"> <label for="drawing">Drawing</label>
+            <input type="checkbox" name="hobby" id="singing"> <label for="singing">Singing</label>
+            <input type="checkbox" name="hobby" id="dancing"> <label for="dancing">Dancing</label>
+            <input type="checkbox" name="hobby" id="sketching"> <label for="sketching">Sketching</label>
+            <br><br>
+            <input type="checkbox" name="hobby" id="other"> <label for="other">Other</label>
+            <input type="text" name="hobby" id="hobby" placeholder="Teaching">
+          </td>
+        </tr>
+        <!-- Qualification -->
+        <tr>
+          <th>
+            <label for="qualification">Qualification</label>
+          </th>
+          <td>
+            <input type="checkbox" name="qualification" id="10th"> <label for="10th">School(10th)</label>
+            <br>
+            <input type="checkbox" name="qualification" id="12th"> <label for="12th">Higher School(12th)</label>
+            <br>
+            <input type="checkbox" name="qualification" id="bachelors"> <label for="bachelors">Graduation(Bachelors)</label>
+            <br>
+            <input type="checkbox" name="qualification" id="masters"> <label for="masters">Post Graduation(Masters)</label>
+            <br>
+            <input type="checkbox" name="qualification" id="phd"> <label for="phd">Phd</label>
+          </td>
+        </tr>
+        <!-- Courses -->
+        <tr>
+          <th>
+            <label for="Courses">Courses Applied For</label>
+          </th>
+          <td>
+            <input type="radio" name="course" id="bca">
+            <label for="bca">BCA(Bachlor of Computer Application)</label>
+            <br>
+            <input type="radio" name="course" id="bcom">
+            <label for="bcom">B.Com(Bachlor of Commerce)</label>
+            <br>
+            <input type="radio" name="course" id="bsc">
+            <label for="bsc">B.Sc(Bachlor of Science)</label>
+            <br>
+            <input type="radio" name="course" id="ba">
+            <label for="ba">BA(Bachlor of Arts)</label>
+            <br>
+            <input type="radio" name="course" id="mca">
+            <label for="mca">MCA(Master of Computer Application)</label>
+            <br>
+            <input type="radio" name="course" id="mcom">
+            <label for="mcom">M.Com(Master of Commerce)</label>
+            <br>
+            <input type="radio" name="course" id="msc">
+            <label for="msc">M.Sc(Master of Science)</label>
+            <br>
+            <input type="radio" name="course" id="ma">
+            <label for="ma">MA(Master of Arts)</label>
+          </td>
+        </tr>
+        <!-- Submit & Reset Button -->
+        <tr>
+          <th colspan="2">
+            <button type="submit">Submit</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset">Reset</button>
+          </th>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+</body>
+</html>
