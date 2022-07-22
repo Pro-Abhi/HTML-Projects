@@ -18,7 +18,7 @@
             <label for="firstName">First Name </label>
           </th>
           <td>
-            <input type="text" name="firstName" id="firstName" size="24" required>
+            <input type="text" name="firstName" id="firstName" size="30" placeholder="First Name" required>
           </td>
         </tr>
         <!-- Last Name -->
@@ -27,7 +27,7 @@
             <label for="lastName">Last Name </label>
           </th>
           <td>
-            <input type="text" name="lastName" id="lastName" size="24" Required>
+            <input type="text" name="lastName" id="lastName" size="30" placeholder="Last Name" Required>
           </td>
         </tr>
         <!-- Email -->
@@ -36,7 +36,7 @@
             <label for="email">Email ID </label>
           </th>
           <td>
-            <input type="email" name="email" id="email" size="24" required>
+            <input type="email" name="email" id="email" size="30" placeholder="Email ID" required>
           </td>
         </tr>
         <!-- Mobile Number -->
@@ -45,7 +45,7 @@
             <label for="mobileNumber">Mobile Number</label>
           </th>
           <td>
-            <input type="tel" name="mobileNumber" id="mobileNumber" maxlength="10" size="24">
+            <input type="tel" name="mobileNumber" id="mobileNumber" maxlength="10" size="30">
           </td>
         </tr>
         <!-- Gender -->
@@ -56,6 +56,7 @@
           <td>
             <input type="radio" name="gender" id="male"> <label for="male">Male</label>
             <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+            <input type="radio" name="gender" id="other"> <label for="other">Other</label>
           </td>
         </tr>
         <!-- Date of Birth -->
@@ -146,7 +147,7 @@
             <label for="address">Address</label>
           </th>
           <td>
-            <textarea name="address" id="address" cols="25" rows="6"></textarea>
+            <textarea name="address" id="address" cols="30" rows="4" placeholder="Enter your address..."></textarea>
           </td>
         </tr>
         <!-- City -->
@@ -155,7 +156,7 @@
             <label for="city">City</label>
           </th>
           <td>
-            <input list="cities" id="city" name="city" size="25">
+            <input list="cities" id="city" name="city" size="30" placeholder="Select your state">
             <datalist id="cities">
               <option value="Mumbai"></option>
               <option value="Delhi"></option>
@@ -187,7 +188,7 @@
             <label for="pinCode">Pin Code</label>
           </th>
           <td>
-            <input type="tel" name="pinCode" id="pinCode" maxlength="6" size="25" placeholder="123456">
+            <input type="tel" name="pinCode" id="pinCode" maxlength="6" size="30" placeholder="123456">
           </td>
         </tr>
         <!-- State -->
@@ -196,7 +197,7 @@
             <label for="state">State</label>
           </th>
           <td>
-            <input list="states" id="state" name="state" size="25">
+            <input list="states" id="state" name="state" size="30" placeholder="Select your state">
             <datalist id="states">
               <option value="Andhra Pradesh"></option>
               <option value="Assam"></option>
@@ -228,7 +229,7 @@
             <label for="country">Country</label>
           </th>
           <td>
-            <input type="text" name="country" id="country" value="India" size="25" readonly>
+            <input type="text" name="country" id="country" value="India" size="30" readonly>
           </td>
         </tr>
         <!-- Hobbies -->
@@ -240,10 +241,9 @@
             <input type="checkbox" name="hobby" id="drawing"> <label for="drawing">Drawing</label>
             <input type="checkbox" name="hobby" id="singing"> <label for="singing">Singing</label>
             <input type="checkbox" name="hobby" id="dancing"> <label for="dancing">Dancing</label>
-            <input type="checkbox" name="hobby" id="sketching"> <label for="sketching">Sketching</label>
             <br><br>
             <input type="checkbox" name="hobby" id="other"> <label for="other">Other</label>
-            <input type="text" name="hobby" id="hobby" placeholder="Teaching">
+            <input type="text" name="hobby" id="hobby" size="21" placeholder="Teaching">
           </td>
         </tr>
         <!-- Qualification -->
